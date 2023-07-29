@@ -19,7 +19,7 @@ class HomeView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presenter = HomePresenter()
+        ///presenter = HomePresenter()
         
         print("Presenter")
         ///Aqui mandamos llamar al presenter
