@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
+        window?.rootViewController = homeView
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

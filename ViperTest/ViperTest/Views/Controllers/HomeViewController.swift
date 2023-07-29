@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class HomeView: UIViewController {
+class HomeViewController: UIViewController {
 
     // MARK: Properties
     var presenter: HomePresenterProtocol?
@@ -28,6 +28,6 @@ class HomeView: UIViewController {
     }
 }
 
-extension HomeView: HomeViewProtocol {
+extension HomeViewController: HomeViewProtocol {
     // TODO: implement view output methods
 }
