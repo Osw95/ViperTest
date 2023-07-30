@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Grk-yg-d0T">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="441-hR-xh7">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--home-->
         <scene sceneID="coj-3p-qHt">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="Grk-yg-d0T" customClass="HomeViewController" customModule="ViperTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" title="home" id="Grk-yg-d0T" customClass="HomeViewController" customModule="ViperTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H33-Nh-05z">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,10 +30,29 @@
                             <constraint firstItem="CIH-Ia-8gN" firstAttribute="centerX" secondItem="H33-Nh-05z" secondAttribute="centerX" id="k6t-nO-Ggy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8Z3-3F-B1j"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUg-QZ-8E9" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="-2"/>
+            <point key="canvasLocation" x="977.86259541984725" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9zc-XB-VQu">
+            <objects>
+                <navigationController storyboardIdentifier="InitialNavigationCtrl" automaticallyAdjustsScrollViewInsets="NO" id="441-hR-xh7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9WO-B4-I7J">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Grk-yg-d0T" kind="relationship" relationship="rootViewController" id="h17-Zm-rgx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22X-0K-JN9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51.145038167938928" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>

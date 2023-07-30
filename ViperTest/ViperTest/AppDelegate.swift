@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /// Se encarga de inicializar nuestros modulos
         let homeView = HomeWireFrame.createHomeModule()
         
-        window = UIWindow(frame: UIScreen.main.bounds)
+        window = UIWindow()
         
         window?.rootViewController = homeView
         

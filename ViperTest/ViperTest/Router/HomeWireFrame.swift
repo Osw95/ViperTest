@@ -13,7 +13,7 @@ class HomeWireFrame: HomeWireFrameProtocol {
 
     class func createHomeModule() -> UIViewController {
         
-        let navController = mainStoryboard.instantiateViewController(withIdentifier: "HomeVC")
+        let navController = mainStoryboard.instantiateViewController(withIdentifier: "InitialNavigationCtrl")
         
         if let view = navController.children.first as? HomeViewController {
             
