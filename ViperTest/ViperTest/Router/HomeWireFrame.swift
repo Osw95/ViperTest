@@ -15,8 +15,14 @@ class HomeWireFrame: HomeWireFrameProtocol {
         
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "InitialNavigationCtrl")
         
+        ///Encontramos el primer controlador de la vista hijo y casteamos a HomeViewcontroller
+        ///Esto funciona solo con un navigation controler por eso buscamos el primer hijo del nav controller
+        /// Si lo quisiera hacer directo a un controller debemos de cambiar navController.children.first A solo la variable , osea quitarle children. first
         if let view = navController.children.first as? HomeViewController {
             
+            
+            ///Inicializamos todos los componentes de viper haciendo uso de los protocolos una manera de decirlo es que inicialisamos
+            ///Todas las clases que cumplan con los protocolos
             let presenter: HomePresenterProtocol & HomeInteractorOutputProtocol = HomePresenter()
             
             let interactor: HomeInteractorInputProtocol & HomeRemoteDataManagerOutputProtocol = HomeInteractor()
@@ -26,6 +32,8 @@ class HomeWireFrame: HomeWireFrameProtocol {
             let remoteDataManager: HomeRemoteDataManagerInputProtocol = HomeRemoteDataManager()
             
             let wireFrame: HomeWireFrameProtocol = HomeWireFrame()
+            
+            ///Ahora asignamos cada referencia a los componentes
             
             view.presenter = presenter
             
