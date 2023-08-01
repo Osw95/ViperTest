@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82D79E892A772D760087F6B2 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D79E882A772D760087F6B2 /* data.swift */; };
 		DBA181AB2A7355F900A43420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA181AA2A7355F900A43420 /* AppDelegate.swift */; };
 		DBA181AD2A7355F900A43420 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA181AC2A7355F900A43420 /* SceneDelegate.swift */; };
 		DBA181B52A7355F900A43420 /* ViperTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBA181B32A7355F900A43420 /* ViperTest.xcdatamodeld */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82D79E882A772D760087F6B2 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = data.swift; path = ViperTest/data.swift; sourceTree = SOURCE_ROOT; };
 		DBA181A72A7355F900A43420 /* ViperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA181AA2A7355F900A43420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBA181AC2A7355F900A43420 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		DBAC77EC2A74C21A006967CE /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				82D79E882A772D760087F6B2 /* data.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				DBAC77E62A749CFF006967CE /* HomeViewController.swift in Sources */,
 				DBA181B52A7355F900A43420 /* ViperTest.xcdatamodeld in Sources */,
 				DBAC77E32A749CFF006967CE /* HomeLocalDataManager.swift in Sources */,
+				82D79E892A772D760087F6B2 /* data.swift in Sources */,
 				DBAC77E52A749CFF006967CE /* HomeInteractor.swift in Sources */,
 				DBAC77E82A749CFF006967CE /* HomeWireFrame.swift in Sources */,
 				DBA181AB2A7355F900A43420 /* AppDelegate.swift in Sources */,
