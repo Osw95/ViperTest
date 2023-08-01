@@ -10,7 +10,10 @@ import Foundation
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+    // MARK: IBoutlets
+    @IBOutlet weak var tableHomeView: UITableView!
+    
     // MARK: Properties
     var presenter: HomePresenterProtocol?
 
