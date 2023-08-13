@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82D79E892A772D760087F6B2 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D79E882A772D760087F6B2 /* data.swift */; };
+		823AF04B2A86CD8F00B694E5 /* endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823AF04A2A86CD8F00B694E5 /* endpoint.swift */; };
+		823AF04E2A894DE300B694E5 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823AF04D2A894DE300B694E5 /* People.swift */; };
+		823AF0502A894DFD00B694E5 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823AF04F2A894DFD00B694E5 /* Show.swift */; };
 		DBA181AB2A7355F900A43420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA181AA2A7355F900A43420 /* AppDelegate.swift */; };
 		DBA181AD2A7355F900A43420 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA181AC2A7355F900A43420 /* SceneDelegate.swift */; };
 		DBA181B52A7355F900A43420 /* ViperTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBA181B32A7355F900A43420 /* ViperTest.xcdatamodeld */; };
@@ -24,7 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		82D79E882A772D760087F6B2 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = data.swift; path = ViperTest/data.swift; sourceTree = SOURCE_ROOT; };
+		823AF04A2A86CD8F00B694E5 /* endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endpoint.swift; sourceTree = "<group>"; };
+		823AF04D2A894DE300B694E5 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		823AF04F2A894DFD00B694E5 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		DBA181A72A7355F900A43420 /* ViperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA181AA2A7355F900A43420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBA181AC2A7355F900A43420 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		823AF04C2A894DC500B694E5 /* Entitys */ = {
+			isa = PBXGroup;
+			children = (
+				823AF04D2A894DE300B694E5 /* People.swift */,
+				823AF04F2A894DFD00B694E5 /* Show.swift */,
+			);
+			path = Entitys;
+			sourceTree = "<group>";
+		};
 		DBA1819E2A7355F900A43420 = {
 			isa = PBXGroup;
 			children = (
@@ -72,11 +85,11 @@
 		DBA181A92A7355F900A43420 /* ViperTest */ = {
 			isa = PBXGroup;
 			children = (
+				823AF04C2A894DC500B694E5 /* Entitys */,
 				DBAC77F02A74C2CC006967CE /* Protocol */,
 				DBAC77EF2A74C26C006967CE /* NetworkManager */,
 				DBAC77EE2A74C261006967CE /* DataManager */,
 				DBAC77ED2A74C238006967CE /* Router */,
-				DBAC77EC2A74C21A006967CE /* Entity */,
 				DBAC77EB2A74C20F006967CE /* Interactor */,
 				DBAC77EA2A74C1FF006967CE /* Views */,
 				DBAC77E92A74C1EE006967CE /* Presenter */,
@@ -115,14 +128,6 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		DBAC77EC2A74C21A006967CE /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				82D79E882A772D760087F6B2 /* data.swift */,
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
 		DBAC77ED2A74C238006967CE /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				DBAC77E02A749CFF006967CE /* HomeRemoteDataManager.swift */,
+				823AF04A2A86CD8F00B694E5 /* endpoint.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -237,12 +243,14 @@
 				DBAC77E62A749CFF006967CE /* HomeViewController.swift in Sources */,
 				DBA181B52A7355F900A43420 /* ViperTest.xcdatamodeld in Sources */,
 				DBAC77E32A749CFF006967CE /* HomeLocalDataManager.swift in Sources */,
-				82D79E892A772D760087F6B2 /* data.swift in Sources */,
 				DBAC77E52A749CFF006967CE /* HomeInteractor.swift in Sources */,
+				823AF04E2A894DE300B694E5 /* People.swift in Sources */,
 				DBAC77E82A749CFF006967CE /* HomeWireFrame.swift in Sources */,
+				823AF04B2A86CD8F00B694E5 /* endpoint.swift in Sources */,
 				DBA181AB2A7355F900A43420 /* AppDelegate.swift in Sources */,
 				DBAC77E72A749CFF006967CE /* HomeRemoteDataManager.swift in Sources */,
 				DBAC77E42A749CFF006967CE /* HomeProtocols.swift in Sources */,
+				823AF0502A894DFD00B694E5 /* Show.swift in Sources */,
 				DBAC77E22A749CFF006967CE /* HomePresenter.swift in Sources */,
 				DBA181AD2A7355F900A43420 /* SceneDelegate.swift in Sources */,
 			);
