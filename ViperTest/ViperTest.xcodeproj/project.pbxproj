@@ -29,6 +29,7 @@
 		823AF04A2A86CD8F00B694E5 /* endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endpoint.swift; sourceTree = "<group>"; };
 		823AF04D2A894DE300B694E5 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		823AF04F2A894DFD00B694E5 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		823AF0522A8C905800B694E5 /* typeAliasEnum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = typeAliasEnum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DBA181A72A7355F900A43420 /* ViperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA181AA2A7355F900A43420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBA181AC2A7355F900A43420 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +67,14 @@
 			path = Entitys;
 			sourceTree = "<group>";
 		};
+		823AF0512A8C901500B694E5 /* playGroundTest */ = {
+			isa = PBXGroup;
+			children = (
+				823AF0522A8C905800B694E5 /* typeAliasEnum.playground */,
+			);
+			path = playGroundTest;
+			sourceTree = "<group>";
+		};
 		DBA1819E2A7355F900A43420 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +94,7 @@
 		DBA181A92A7355F900A43420 /* ViperTest */ = {
 			isa = PBXGroup;
 			children = (
+				823AF0512A8C901500B694E5 /* playGroundTest */,
 				823AF04C2A894DC500B694E5 /* Entitys */,
 				DBAC77F02A74C2CC006967CE /* Protocol */,
 				DBAC77EF2A74C26C006967CE /* NetworkManager */,

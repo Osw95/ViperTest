@@ -12,7 +12,7 @@ struct showsList: Codable{
 }
 
 struct show: Codable{
-    let score: String?
+    let score: Float?
     let show:showInfo?
 }
 

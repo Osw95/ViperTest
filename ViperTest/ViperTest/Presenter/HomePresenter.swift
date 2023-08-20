@@ -20,7 +20,12 @@ class HomePresenter  {
 extension HomePresenter: HomePresenterProtocol {
     // TODO: implement presenter methods
     func viewDidLoad() {
+        
+        interactor?.interactorGetData()
+        
         print("Hola recuerda que esto no es más que un simple metodo llamado desde el viewdidload del controller")
+    
+        
     }
 }
 

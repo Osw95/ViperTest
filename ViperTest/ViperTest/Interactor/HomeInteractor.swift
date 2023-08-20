@@ -17,6 +17,38 @@ class HomeInteractor: HomeInteractorInputProtocol {
 
 }
 
-extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
-    // TODO: Implement use case methods
+
+extension HomeInteractor {
+    
+    func interactorGetData(){
+        
+        remoteDatamanager?.load(resource: endpoint.searchPeople(query: "girl").url ) { (result: NetworkResponse<[show]>) in
+            
+            switch result {
+                
+            case .success(let dataConsulted):
+                
+                print(dataConsulted)
+                
+            case .failure(let errorConsulta):
+                
+                print("error \(errorConsulta)")
+                
+            }
+            
+        }
+        
+    }
+    
 }
+
+extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
+    
+    func remoteCallBackData<T>(dataApi: T) {
+        print("Data que estamos enviando \(dataApi)")
+    }
+    
+}
+
+
+/// Tengo que mandar llamar la api  y ver que me imprime !!! Aqui me quede 
