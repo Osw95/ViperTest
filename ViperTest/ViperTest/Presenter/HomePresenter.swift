@@ -30,5 +30,12 @@ extension HomePresenter: HomePresenterProtocol {
 }
 
 extension HomePresenter: HomeInteractorOutputProtocol {
+    
+    func interactorPushDataPresenter(dataShow: [tvShow]) {
+        
+        view?.presenterPushDataView(dataShow: dataShow)
+        
+    }
+    
     // TODO: implement interactor output methods
 }

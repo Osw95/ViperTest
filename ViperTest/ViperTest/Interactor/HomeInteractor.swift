@@ -22,13 +22,15 @@ extension HomeInteractor {
     
     func interactorGetData(){
         
-        remoteDatamanager?.load(resource: endpoint.searchPeople(query: "girl").url ) { (result: NetworkResponse<[show]>) in
+        remoteDatamanager?.load(resource: endpoint.searchShow(query: "venom").url ) { (result: NetworkResponse<[tvShow]>) in
             
             switch result {
                 
             case .success(let dataConsulted):
                 
                 print(dataConsulted)
+                
+                self.remoteCallBackData(dataApi: dataConsulted)
                 
             case .failure(let errorConsulta):
                 
@@ -46,6 +48,9 @@ extension HomeInteractor: HomeRemoteDataManagerOutputProtocol {
     
     func remoteCallBackData<T>(dataApi: T) {
         print("Data que estamos enviando \(dataApi)")
+        
+        presenter?.interactorPushDataPresenter(dataShow: (dataApi as? [tvShow])!)
+        
     }
     
 }

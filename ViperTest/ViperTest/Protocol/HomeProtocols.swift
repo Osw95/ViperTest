@@ -15,6 +15,7 @@ import UIKit
 protocol HomeViewProtocol: AnyObject {
     // PRESENTER -> VIEW
     var presenter: HomePresenterProtocol? { get set }
+    func presenterPushDataView(dataShow:[tvShow])
 }
 
 protocol HomeWireFrameProtocol: AnyObject {
@@ -33,6 +34,7 @@ protocol HomePresenterProtocol: AnyObject {
 
 protocol HomeInteractorOutputProtocol: AnyObject {
 // INTERACTOR -> PRESENTER
+    func interactorPushDataPresenter(dataShow:[tvShow])
 }
 
 protocol HomeInteractorInputProtocol: AnyObject {

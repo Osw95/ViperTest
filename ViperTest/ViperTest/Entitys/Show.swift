@@ -8,10 +8,10 @@
 import Foundation
 
 struct showsList: Codable{
-    var result:[show]
+    var result:[tvShow]
 }
 
-struct show: Codable{
+struct tvShow: Codable{
     let score: Float?
     let show:showInfo?
 }
@@ -30,7 +30,7 @@ struct showInfo:Codable{
     let summary:String?
 }
 
-struct imageShowInfo: Codable{
+struct imageShowInfo:Codable{
     let medium: String?
     let original: String?
 }

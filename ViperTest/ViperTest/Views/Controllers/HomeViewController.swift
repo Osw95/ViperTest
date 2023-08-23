@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     
     // MARK: Properties
     var presenter: HomePresenterProtocol?
+    var arrayViewDataShow = [tvShow]()
 
     // MARK: Lifecycle
 
@@ -37,13 +38,21 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: HomeViewProtocol {
+    func presenterPushDataView(dataShow: [tvShow]) {
+        DispatchQueue.main.async { [self] in
+            arrayViewDataShow = dataShow
+            tableHomeView.reloadData()
+        }
+
+    }
+    
     // TODO: implement view output methods
 }
 
 extension HomeViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return arrayViewDataShow.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,9 +61,9 @@ extension HomeViewController: UITableViewDataSource{
         
         var content = cell.defaultContentConfiguration()
         
-        content.text = "PRUEBA HARDCODED"
-        
-        content.secondaryText = "texto de prueba"
+        content.text = "\(arrayViewDataShow[indexPath.row].show?.name ?? "no name")"
+    
+        content.secondaryText = "\(arrayViewDataShow[indexPath.row].show?.language ?? "No lang")"
         
         cell.contentConfiguration = content
         
